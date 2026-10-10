@@ -20,7 +20,17 @@ The public sample includes the shared Swift bundle validator and its failure tes
 
 A native Mac watch-party app with synchronized playback and chat. Its SwiftUI clients coordinate through a Rust service.
 
-[Watch Party story](https://hendeaux.dev/projects/watch-party)
+The public example pairs the Swift playback decisions with the Rust room protocol. A reproducible local scenario exercises play, pause, seek and waiting for a participant; Swift consumes the messages emitted by Rust. The full player, personal media and private deployment stay outside this example.
+
+[Watch Party story](https://hendeaux.dev/projects/watch-party) · [Public example](https://github.com/Hendersonajardimj/watchparty-sync) · [Swift synchronization](https://github.com/Hendersonajardimj/watchparty-sync/blob/main/swift/Sources/SyncCore/SyncEngine.swift) · [Tests](https://github.com/Hendersonajardimj/watchparty-sync/tree/main/swift/Tests/SyncCoreTests)
+
+### MotorLab
+
+A browser experiment for understanding feedback control. Change target speed, load or the drive ceiling and compare a fixed command with proportional–integral feedback. The deterministic model shows disturbance rejection, saturation and recovery without accumulating error against a saturated actuator.
+
+It is a software simulation with ideal measurements, not a physical motor experiment. The public project includes the interactive lesson, model and tests.
+
+[MotorLab story](https://hendeaux.dev/projects/motorlab) · [Try the simulation](https://hendersonajardimj.github.io/motorlab/) · [Source](https://github.com/Hendersonajardimj/motorlab) · [Model](https://github.com/Hendersonajardimj/motorlab/blob/main/src/model.js) · [Tests](https://github.com/Hendersonajardimj/motorlab/tree/main/tests)
 
 ## Selected client work
 
