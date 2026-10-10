@@ -10,9 +10,11 @@ I build tools for reading, learning, and practical workflows. My work includes w
 
 A reader that keeps text and narration together. The text highlights as the recording plays, and choosing a word moves playback to that point.
 
-The web tool checks the text and timing data and stores them with the audio as a local artifact. The native Mac version generates speech on the device and labels its word timings as estimated. The native app is unreleased.
+The web tool checks text and timing data and stores them with the audio as a local artifact. The Mac generates narration on the device, labels its word timings as estimated, and publishes a completed package to a selected shared folder. The iPhone and iPad companion validates and downloads that package into its own storage for playback and saved progress. These are development builds, with no public native release claimed.
 
-[Read Along story and demo](https://hendeaux.dev/projects/read-along) · [Readalong Core source](https://github.com/Hendersonajardimj/readalong-core)
+The public sample includes the shared Swift bundle validator and its failure tests, alongside the small browser timing example. The validator checks hashes, exact text ranges and complete playable audio before committing a local copy.
+
+[Read Along story and demo](https://hendeaux.dev/projects/read-along) · [Public source](https://github.com/Hendersonajardimj/readalong-core) · [Swift validator](https://github.com/Hendersonajardimj/readalong-core/blob/main/companion/ReadAlongKit/Sources/ReadAlongKit/ReadAlongBundle.swift) · [Failure tests](https://github.com/Hendersonajardimj/readalong-core/blob/main/companion/ReadAlongKit/Tests/ReadAlongKitTests/ReadAlongBundleTests.swift)
 
 ### Watch Party
 
